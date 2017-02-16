@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MortageCalculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="principal">Amount Borrowed:</string>
+    <string name="interestRate">Interest Rate:</string>
+    <string name="loanTerm">Loan Term:</string>
+    <string name="monthlyPayment">Monthly Payment: </string>
+</resources>

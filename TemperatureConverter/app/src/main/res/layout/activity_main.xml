@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/myColor"
+    tools:context="temperature.android.csulb.edu.temperatureconverter.MainActivity">
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radioButton"
+        android:layout_centerInParent="true"
+        >
+
+        <RadioButton
+            android:text="@string/celcius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radioButton"
+            />
+
+        <RadioButton
+            android:text="@string/fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radioButton2" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned|numberDecimal"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/radioGroup"
+         />
+
+    <Button
+        android:text="@string/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="onClick"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
