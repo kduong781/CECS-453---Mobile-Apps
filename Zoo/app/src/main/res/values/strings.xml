@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Zoo</string>
+    <string name="zoo">Cartoon Zoo</string>
+    <string name="animal">Animals: </string>
+    <string name="info">Information</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="phone">(888)-888-8888</string>
+    <string name="title_activity_zoo_info">ZooInfo</string>
+    <string name="title_activity_detail">Detail</string>
+
 </resources>
