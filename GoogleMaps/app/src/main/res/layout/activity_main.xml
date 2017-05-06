@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gmaps.android.csulb.edu.googlemaps.MainActivity">
+
+    <Button
+        android:id="@+id/btnECS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/map"
+        android:onClick="onClick_ECS"
+        android:text="ECS"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnECS"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnECS"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick_LongBeachUniv"
+        android:text="University"
+        android:id="@+id/btnUniv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnUniv"
+        android:onClick="onClick_City"
+        android:text="City"
+        android:id="@+id/btnCity"/>
+</RelativeLayout>

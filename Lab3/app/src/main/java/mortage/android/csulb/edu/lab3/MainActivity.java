@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         initList();
         ListView lv = (ListView) findViewById(R.id.listView);
 
-
         SimpleAdapter simpleAdpt = new SimpleAdapter(this, planetsList,
                 android.R.layout.simple_list_item_1, new String[] {"planet"}, new int[]
                 {android.R.id.text1});
